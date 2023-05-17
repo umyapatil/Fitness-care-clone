@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: var(--secondary-color);
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+p{
+    color: rgb(184, 184, 184);
+    line-height: 2;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.1rem;
+}
+:root{
+    --primary-color: #a6c311;
+    --secondary-color: #333;
+}
+
+.color-primary{
+    color: var(--primary-color);
+}
+
+.btn-green{
+    background-color: var(--primary-color);
+    color:  white;
+    padding: 17px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border: var(--primary-color) 3px solid;
+    transition: 0.5s;
+}
+.btn-green:hover{
+    background-color: transparent;
+    border: white 3px solid;
+}
+
+.btn-white{
+    background-color: var(--primary-color);
+    color:  white;
+    padding: 17px 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+    border: white 3px solid;
+    transition: 0.5s;
+    background-color: transparent;
+}
+.btn-white:hover{
+    background-color: var(--primary-color);
+    border: var(--primary-color) 3px solid;
+}
+
+.bg-img{
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(5, 5, 5, 0.966),rgba(5, 5, 5, 0.781)), url(images/background.jpg);
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+
+.transperent-page{
+    padding: 4rem 7rem;
+    text-align: center;
+    z-index: -1;
+    
+}
+.content-transperent-page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 12rem 0;
+
+}
+.logo-and-button{
+    display: flex;
+    justify-content: space-between;
+}
+.content-transperent-page h1{
+    color: white;
+    font-size: 3.2rem;
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+.page-2{
+    background-color: white;
+    height: 240vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.page-2-sub-page{
+    overflow-y: hidden;
+    height: 240vh;
+    width: 85vw;
+    padding: 3rem 0;
+    box-shadow: 5px 5px 15px rgb(37, 37, 37);
+    position: relative;
+    top: -15;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.2rem;
+    z-index: 5;
+
+}
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 2.2rem;
+}
+.column img{
+    width: 35rem;
+}
+
+.bar img{
+    width: 100%;
+}
+
+.layout-1{
+    padding: 6rem 0;
+    background-color: white;
+    display: flex;
+    gap: 100px;
+}
+.justify-content-end{
+    justify-content: end;
+}
+.layout-1 .side-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-1 img{
+    padding: 1rem 0;
+    width: 107%;
+}
+.layout-1 h2{
+    font-size: 2.4rem;
+    color: black;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+}
+.bar-2{
+    display: flex;
+    height: 19vh;
+    width: 100%;
+    background-color: white;
+    box-shadow: 5px 0px 0px 0px 15px rgb(119, 119, 119);
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+}
+.bar-2 img{
+   width: 150px;
+   height: 35px;
+}
+.end-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7rem;
+}
+.end-sec h1{
+    font-size: 3rem;
+    color: white;
+}
+.end-sec img, .end-sec h1{
+    margin-bottom: 3rem;
+}
+
+
+/* ----------responsive---------- */
+
+@media (max-width:1300px){
+    .page-2{
+        height: 480vh;
+    }
+   .page-2-sub-page{
+    flex-direction: column;
+    height: 480vh;
+   }
+  .layout-1{
+    flex-direction: column;
+  }
+  .bar-2{
+    display: none;
+  }
+}
+
+
+
+@media (max-width:800px ) {
+    .logo-and-button{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo-and-button img{
+        display: none;
+    }
+    .btn-green , .btn-white{
+        padding: 10px 20px;
+        font-size: 14px;
+        text-align: center;
+        width: 15rem;
+        justify-content: center;
+    }
+    .bar{
+        display: none;
+    }
+    .logo-and-button{
+        margin-bottom: 2rem;
+    }
+    .transperent-page{
+        padding: 1rem 0px;
+    }
+    .transperent-page h1{
+        font-size: 2rem;
+        padding: 0px 1rem;
+    }
+    .end-sec h1{
+        font-size: 2rem;
+    }
+    .layout-1 h2{
+        font-size: 1.5rem;
+    }
+    .layout-1 p{
+        line-height: 1.2;
+        font-size: 14px;
+    }
+}
